@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Eternidade Link</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --card: #1a1a1a;
+      --text: #fff;
+      --gray: #8b949e;
+      --cyan: #00f2ff;
+    }
+    body[data-theme="light"] {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --text: #111;
+      --gray: #555;
+      --cyan: #0099cc;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;align-items:center;padding:2rem 1rem;transition:background .3s,color .3s;}
+    header{width:100%;max-width:600px;display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;}
+    h1{font-weight:200;}
+    button{cursor:pointer;padding:.5rem 1rem;border:1px solid var(--cyan);background:transparent;color:var(--cyan);border-radius:4px;}
+    button:hover{background:var(--cyan);color:var(--bg);}
+    .card{background:var(--card);padding:1.5rem;border-radius:6px;border:1px solid rgba(0,0,0,.1);width:100%;max-width:600px;margin-bottom:1rem;}
+    .card h2{margin-bottom:.5rem;color:var(--cyan);}
+    .social{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;}
+    .social a{flex:1 1 100px;text-align:center;padding:.75rem;border-radius:4px;background:var(--card);border:1px solid rgba(0,0,0,.1);color:var(--text);text-decoration:none;transition:.3s;}
+    .social a:hover{background:var(--cyan);color:var(--bg);}
+    form{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem;}
+    input,textarea{padding:.75rem;border:1px solid rgba(0,0,0,.2);background:var(--card);color:var(--text);border-radius:4px;}
+    textarea{resize:vertical;min-height:100px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <div>
+      <button onclick="location.href='index.html'">← Voltar</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </header>
+
+  <!-- Redes Sociais -->
+  <section class="card">
+    <h2>Redes Sociais</h2>
+    <p>Segue a gente e fica por dentro de todas as novidades!</p>
+    <div class="social">
+      <a href="https://tiktok.com/@eternidadelink" target="_blank">TikTok</a>
+      <a href="https://instagram.com/eternidadelink" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@eternidadelink" target="_blank">YouTube</a>
+      <a href="https://t.me/eternidadelink" target="_blank">Telegram</a>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section class="card">
+    <h2>Fale Conosco</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" name="name" placeholder="Nome" required />
+      <input type="email" name="email" placeholder="E-mail" required />
+      <textarea name="msg" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar via Telegram</button>
+    </form>
+  </section>
+
+  <script>
+    /* Tema */
+    const btn = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    html.setAttribute('data-theme', saved || 'dark');
+    btn.textContent = saved === 'light' ? '☀️' : '🌙';
+    btn.onclick = () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      btn.textContent = next === 'light' ? '☀️' : '🌙';
+    };
+
+    /* Envio Telegram */
+    function sendMessage(e) {
+      e.preventDefault();
+      const f = e.target;
+      const texto = `Contato Eternidade Link
+Nome: ${f.name.value}
+E-mail: ${f.email.value}
+Mensagem: ${f.msg.value}`;
+      window.open(`https://t.me/share/url?url=&text=${encodeURIComponent(texto)}`, '_blank');
+      f.reset();
+    }
+  </script>
+</body>
+</html>
