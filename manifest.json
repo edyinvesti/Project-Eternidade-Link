@@ -1,0 +1,16 @@
+{
+  "name": "Eternidade Link",
+  "short_name": "Eternidade",
+  "description": "Rede neural descentralizada.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#00f2ff",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%2300f2ff'/%3E%3Ctext x='50%25' y='50%25' font-size='300' fill='%23000' text-anchor='middle' dominant-baseline='middle'%3EEL%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
