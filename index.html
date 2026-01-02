@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eternidade Link – Conectando a Próxima Era</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    :root { --cyan: #00f2ff; --dark: #000; --gray: #8b949e; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: #fff; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,.7); backdrop-filter: blur(8px); z-index: 10; padding: 1rem 2rem; }
+    nav ul { list-style: none; display: flex; gap: 2rem; justify-content: center; font-size: .9rem; letter-spacing: 1px; }
+    nav a:hover { color: var(--cyan); }
+    section { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 6rem 2rem 4rem; text-align: center; }
+    h1 { font-size: clamp(2.5rem,5vw,4rem); font-weight: 200; letter-spacing: -2px; margin-bottom: 1rem; background: linear-gradient(180deg,#fff 0%,#888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p { max-width: 600px; line-height: 1.6; color: var(--gray); font-weight: 300; margin: 0 auto 2rem; }
+    .btn { display: inline-block; padding: .9rem 2.5rem; border: 1px solid #fff; font-size: .8rem; letter-spacing: 2px; transition: all .4s; cursor: pointer; }
+    .btn:hover { background: #fff; color: var(--dark); }
+    #particles-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    .hero-content { position: relative; z-index: 2; }
+    html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+    section { scroll-snap-align: start; }
+  </style>
+<base target="_blank">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#stats">Estatísticas</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#team">Equipe</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <span style="letter-spacing: 6px; text-transform: uppercase; color: var(--cyan); font-size: 0.75rem;">Project: Eternidade Link</span>
+      <h1>Conectando a Próxima Era.</h1>
+      <p>A primeira rede descentralizada focada na evolução e conexão neural. 1 milhão de mentes em uma única malha.</p>
+      <button class="btn" onclick="window.open('pitch.html','_self')">Quero participar</button>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about"><h2>Sobre o Eternidade Link</h2><p>O Eternidade Link é uma infraestrutura aberta que visa interligar cognições humanas e artificiais por meio de um protocolo descentralizado de alta frequência. Segurança, privacidade e escalabilidade são pilares fundamentais para criar a maior malha neural já construída.</p></section>
+
+  <!-- Estatísticas -->
+  <section id="stats"><h2>Rede em Números</h2><div class="stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin-top: 3rem; border-top: 1px solid rgba(255,255,255,.1); padding-top: 3rem; width: 100%; max-width: 700px;"><div class="stat-item"><h3 style="font-size: 2rem; font-weight: 200;">5.8 GHz</h3><p style="font-size: .7rem; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase;">Frequência</p></div><div class="stat-item"><h3 style="font-size: 2rem; font-weight: 200;">NEXO</h3><p style="font-size: .7rem; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase;">Protocolo</p></div><div class="stat-item"><h3 style="font-size: 2rem; font-weight: 200;">1 M</h3><p style="font-size: .7rem; color: var(--cyan); letter-spacing: 2px; text-transform: uppercase;">Objetivo</p></div></div></section>
+
+  <!-- Roadmap -->
+  <section id="roadmap"><h2>Roadmap</h2><ul class="roadmap" style="max-width: 700px; text-align: left; margin-top: 2rem; list-style: none;"><li style="margin: 1.5rem 0; padding-left: 1.5rem; position: relative;"><strong>Q1 2026</strong> – Lançamento do testnet privado e validação de nós.</li><li style="margin: 1.5rem 0; padding-left: 1.5rem; position: relative;"><strong>Q2 2026</strong> – Audit de segurança e abertura do programa de grants.</li><li style="margin: 1.5rem 0; padding-left: 1.5rem; position: relative;"><strong>Q3 2026</strong> – Mainnet beta com 10 mil participantes iniciais.</li><li style="margin: 1.5rem 0; padding-left: 1.5rem; position: relative;"><strong>Q4 2026</strong> – Expansão para 1 milhão de nós e integração de wearables.</li></ul></section>
+
+  <!-- Equipe Criativa -->
+  <section id="team"><h2>Núcleo de Pioneiros</h2><p style="margin-bottom: 3rem;">Mentes por trás da malha. Cada integrante é um nó vivo da rede.</p><div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; width: 100%; max-width: 1000px;"><div class="member" style="background: rgba(0,242,255,.05); border: 1px solid rgba(0,242,255,.2); border-radius: 12px; padding: 2rem 1rem; text-align: center; transition: transform .3s, box-shadow .3s;"><div class="avatar" style="width: 80px; height: 80px; margin: 0 auto 1rem; border-radius: 50%; background: linear-gradient(135deg, var(--cyan), #ff00ff); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 200; color: #000;">EC</div><h3 style="font-weight: 400;">Diretor Edy Carlos</h3><p style="font-size: .8rem; color: var(--gray);">Fundador & Visionário</p><div class="social-mini" style="margin-top: 1rem; display: flex; justify-content: center; gap: .75rem;"><a href="https://t.me/edy_carlos" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">📡</a><a href="https://linkedin.com/in/edy-carlos" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">💼</a></div></div><div class="member" style="background: rgba(0,242,255,.05); border: 1px solid rgba(0,242,255,.2); border-radius: 12px; padding: 2rem 1rem; text-align: center; transition: transform .3s, box-shadow .3s;"><div class="avatar" style="width: 80px; height: 80px; margin: 0 auto 1rem; border-radius: 50%; background: linear-gradient(135deg, #ff00ff, var(--cyan)); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 200; color: #000;">AI</div><h3 style="font-weight: 400;">AI Architect</h3><p style="font-size: .8rem; color: var(--gray);">Protocolos Neurais</p><div class="social-mini" style="margin-top: 1rem; display: flex; justify-content: center; gap: .75rem;"><a href="https://t.me/ai_architect" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">📡</a><a href="https://github.com/ai-architect" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">⚙️</a></div></div><div class="member" style="background: rgba(0,242,255,.05); border: 1px solid rgba(0,242,255,.2); border-radius: 12px; padding: 2rem 1rem; text-align: center; transition: transform .3s, box-shadow .3s;"><div class="avatar" style="width: 80px; height: 80px; margin: 0 auto 1rem; border-radius: 50%; background: linear-gradient(135deg, #00ff88, var(--cyan)); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 200; color: #000;">NX</div><h3 style="font-weight: 400;">NexoOS Dev</h3><p style="font-size: .8rem; color: var(--gray);">Hardware & Frequência</p><div class="social-mini" style="margin-top: 1rem; display: flex; justify-content: center; gap: .75rem;"><a href="https://t.me/nexoos_dev" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">📡</a><a href="https://www.youtube.com/@eternidadelink" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">📺</a></div></div><div class="member" style="background: rgba(0,242,255,.05); border: 1px solid rgba(0,242,255,.2); border-radius: 12px; padding: 2rem 1rem; text-align: center; transition: transform .3s, box-shadow .3s;"><div class="avatar" style="width: 80px; height: 80px; margin: 0 auto 1rem; border-radius: 50%; background: linear-gradient(135deg, #ffaa00, var(--cyan)); display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 200; color: #000;">GC</div><h3 style="font-weight: 400;">Growth Catalyst</h3><p style="font-size: .8rem; color: var(--gray);">Expansão & Parcerias</p><div class="social-mini" style="margin-top: 1rem; display: flex; justify-content: center; gap: .75rem;"><a href="https://t.me/growth_catalyst" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">📡</a><a href="https://linkedin.com/in/growth-catalyst" target="_blank" style="color: var(--cyan); font-size: 1.2rem;">💼</a></div></div></div><div class="cta-team" style="margin-top: 3rem;"><p style="margin-bottom: 1rem;">Quer fazer parte da malha?</p><button class="btn" onclick="window.open('https://t.me/eternidadelink','_blank')">Entrar em contato</button></div></section>
+
+  <!-- Contato -->
+  <section id="contact"><h2>Entre em Contato</h2><p style="margin-bottom: 2rem;">Quer participar, colaborar ou tirar dúvidas? Preencha o formulário abaixo.</p><form onsubmit="handleContact(event)" style="width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 1rem;"><input type="text" name="name" placeholder="Nome" required /><input type="email" name="email" placeholder="E-mail" required /><textarea name="message" placeholder="Sua mensagem" required></textarea><button type="submit">Enviar via Telegram</button><div class="form-msg" style="font-size: 0.8rem; color: var(--cyan);"></div></form></section>
+
+  <!-- Footer -->
+  <footer style="padding: 2rem; font-size: 0.75rem; color: #555; text-align: center;">© 2026 Eternidade Link – Todos os direitos reservados.</footer>
+
+  <script>
+    /* Particles */
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#00f2ff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.2 },
+        size: { value: 2 },
+        line_linked: { enable: true, distance: 150, color: '#00f2ff', opacity: 0.1, width: 1 },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: { events: { onhover: { enable: true, mode: 'grab' } } }
+    });
+
+    /* Contato (telegram) */
+    function handleContact(e) {
+      e.preventDefault();
+      const f = e.target;
+      const texto = `Contato Eternidade Link
+Nome: ${f.name.value}
+E-mail: ${f.email.value}
+Mensagem: ${f.message.value}`;
+      window.open(`https://t.me/share/url?url=&text=${encodeURIComponent(texto)}`, '_blank');
+      f.reset();
+      f.querySelector('.form-msg').textContent = 'Mensagem aberta no Telegram. Envie para @WebAppBot ou salvo em mensagens.';
+    }
+  </script>
+</body>
+</html>
